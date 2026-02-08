@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://owlhyyx2uf4p"
-path="res://.godot/imported/Allen THe alien.png-dffd1fc9489043664bc30968e25d7f51.ctex"
+path="res://.godot/imported/Allen THe alien.png-a748280d87a315631a37a82973c2580f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Allen THe alien.png"
-dest_files=["res://.godot/imported/Allen THe alien.png-dffd1fc9489043664bc30968e25d7f51.ctex"]
+source_file="res://assets/Allen THe alien.png"
+dest_files=["res://.godot/imported/Allen THe alien.png-a748280d87a315631a37a82973c2580f.ctex"]
 
 [params]
 
