@@ -1,14 +1,17 @@
 [gd_scene format=3 uid="uid://crd3vrp6sdxm"]
 
+[ext_resource type="Script" uid="uid://b6j48imxd6sgj" path="res://scripts/main.gd" id="1_0f027"]
+
 [node name="Node2D" type="Node2D" unique_id=2044284176]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1908342116]
 position = Vector2(-1, -3)
+script = ExtResource("1_0f027")
 
 [node name="Control" type="Control" parent="." unique_id=1649311233]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 317.0
-offset_top = 137.0
-offset_right = 357.0
-offset_bottom = 177.0
+offset_left = 281.0
+offset_top = 136.0
+offset_right = 321.0
+offset_bottom = 176.0
