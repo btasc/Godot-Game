@@ -4,3 +4,11 @@
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1908342116]
 position = Vector2(-1, -3)
+
+[node name="Control" type="Control" parent="." unique_id=1649311233]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 317.0
+offset_top = 137.0
+offset_right = 357.0
+offset_bottom = 177.0
