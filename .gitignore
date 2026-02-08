@@ -1,0 +1,12 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+/ios/
+
+# Imported translations
+*.translation
+
+# Mono/C# ignores
+.mono/
+*.csproj
+*.sln
