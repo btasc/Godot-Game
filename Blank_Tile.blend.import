@@ -15,7 +15,6 @@ dest_files=["res://.godot/imported/Blank_Tile.blend-ac0accd4abe7ea2d4b9efb84a54f
 
 nodes/root_type=""
 nodes/root_name=""
-nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false

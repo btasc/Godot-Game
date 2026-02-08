@@ -1,45 +1,4 @@
 [gd_scene format=3 uid="uid://byrnxalje0fke"]
 
-[ext_resource type="Script" uid="uid://b6j48imxd6sgj" path="res://scripts/main.gd" id="1_0f027"]
-[ext_resource type="Script" uid="uid://chvvw18sau0yg" path="res://scripts/character.gd" id="2_gyfs4"]
-[ext_resource type="Texture2D" uid="uid://dlvvmryoe6j8q" path="res://bird.png" id="3_d5x1h"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8mm7a"]
-size = Vector2(78.5, 30.625)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_gyfs4"]
-a = Vector2(-568, 310)
-b = Vector2(567, 310)
-
-[node name="Node2D" type="Node2D" unique_id=2044284176]
-script = ExtResource("1_0f027")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1908342116]
-position = Vector2(-1, -3)
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=16833171]
-position = Vector2(-48.10028, -42.595245)
-motion_mode = 1
-script = ExtResource("2_gyfs4")
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1580686281]
-position = Vector2(-150.89972, 9.595243)
-scale = Vector2(0.43929842, 0.44058645)
-texture = ExtResource("3_d5x1h")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Sprite2D" unique_id=1864464545]
-position = Vector2(-86.50156, -88.51839)
-scale = Vector2(2.037304, 2.0313478)
-shape = SubResource("RectangleShape2D_8mm7a")
-debug_color = Color(0.8683292, 0.00056332233, 0.86056167, 0.41960785)
-
-[node name="KILL ZONE" type="Area2D" parent="." unique_id=2031173955]
-
-[node name="Bottom Border" type="CollisionShape2D" parent="KILL ZONE" unique_id=1637576349]
-shape = SubResource("SegmentShape2D_gyfs4")
-debug_color = Color(0.9647059, 0, 0, 0.41960785)
-
-[node name="Top Border" type="CollisionShape2D" parent="KILL ZONE" unique_id=768217267]
-position = Vector2(1, -631)
-shape = SubResource("SegmentShape2D_gyfs4")
-debug_color = Color(0.9647059, 0, 0, 0.41960785)
+[node name="Node3D" type="Node3D" unique_id=1269807551]
+transform = Transform3D(0.48592356, 0, 0.8740013, 0, 1, 0, -0.8740013, 0, 0.48592356, 0, 0, 0)
