@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d1r1uy3sb7pul"
-path="res://.godot/imported/Bush_Tile.glb-62671e0810558ef09b7f5d479e776fa4.scn"
+path="res://.godot/imported/Bush_Tile.glb-f086c409037e784ff08787b495b2d4ec.scn"
 
 [deps]
 
-source_file="res://Tiles/Bush_Tile.glb"
-dest_files=["res://.godot/imported/Bush_Tile.glb-62671e0810558ef09b7f5d479e776fa4.scn"]
+source_file="res://tiles/Bush_Tile.glb"
+dest_files=["res://.godot/imported/Bush_Tile.glb-f086c409037e784ff08787b495b2d4ec.scn"]
 
 [params]
 
