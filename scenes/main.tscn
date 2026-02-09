@@ -6,10 +6,14 @@
 
 [node name="Main" type="Node3D" unique_id=1736328181]
 
-[node name="Camera" type="Camera3D" parent="." unique_id=264095415]
-transform = Transform3D(0.9189289, 0.3944231, 0, -0.3944231, 0.9189289, 0, 0, 0, 1, -1.2736274, 3.1397226, -0.059222102)
-script = ExtResource("1_o5qli")
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=70643687]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3, -2)
 mesh = SubResource("BoxMesh_sgp6g")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=554194986]
+
+[node name="Node3D" type="Node3D" parent="CharacterBody3D" unique_id=749202970]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Node3D" unique_id=1960727859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3784428, 2.0324998)
+script = ExtResource("1_o5qli")

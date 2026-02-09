@@ -3,6 +3,9 @@ extends Camera3D
 
 # Consts
 var move_speed = 1
+var look_sense = 0.002
+var max_pitch = 1
+var min_pitch = -1
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,12 +14,24 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	handle_input(delta)
+	handle_pan(delta)
+
+func _input(event):
+	
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):
+		
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		
+		if event is InputEventMouseMotion:
+			global_rotate(Vector3.UP, -event.relative.x * look_sense)
+			rotate_object_local(Vector3.RIGHT, -event.relative.y * look_sense)
+			rotation.x = clamp(rotation.x, min_pitch, max_pitch)
+	
+	else:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 	
-
-
-func handle_input(delta: float):
+func handle_pan(delta: float):
 	var v = Vector3(0, 0, 0)
 	
 	var speed_mult = 1;
