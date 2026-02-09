@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bmtpbdn8hed04"
-path="res://.godot/imported/All_Tile.glb-6ccba18f017566933c0af1731c96af61.scn"
+path="res://.godot/imported/All_Tile.glb-01121606713183aadb6c7d12961979a5.scn"
 
 [deps]
 
-source_file="res://tiles/All_Tile.glb"
-dest_files=["res://.godot/imported/All_Tile.glb-6ccba18f017566933c0af1731c96af61.scn"]
+source_file="res://Tiles/All_Tile.glb"
+dest_files=["res://.godot/imported/All_Tile.glb-01121606713183aadb6c7d12961979a5.scn"]
 
 [params]
 

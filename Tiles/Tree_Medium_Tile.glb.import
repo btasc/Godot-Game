@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bofdyn4ed12gr"
-path="res://.godot/imported/Tree_Medium_Tile.glb-214e99191f9160fd6a4964384af63562.scn"
+path="res://.godot/imported/Tree_Medium_Tile.glb-775f132d3fb59de44fcea4bc5e025bc6.scn"
 
 [deps]
 
-source_file="res://tiles/Tree_Medium_Tile.glb"
-dest_files=["res://.godot/imported/Tree_Medium_Tile.glb-214e99191f9160fd6a4964384af63562.scn"]
+source_file="res://Tiles/Tree_Medium_Tile.glb"
+dest_files=["res://.godot/imported/Tree_Medium_Tile.glb-775f132d3fb59de44fcea4bc5e025bc6.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://hrb0tte5sijk"
-path="res://.godot/imported/Rock_Tile.glb-f3888190429d6e7a4c115f4b29882fd0.scn"
+path="res://.godot/imported/Rock_Tile.glb-6036405facf65ba001419717e862939c.scn"
 
 [deps]
 
-source_file="res://tiles/Rock_Tile.glb"
-dest_files=["res://.godot/imported/Rock_Tile.glb-f3888190429d6e7a4c115f4b29882fd0.scn"]
+source_file="res://Tiles/Rock_Tile.glb"
+dest_files=["res://.godot/imported/Rock_Tile.glb-6036405facf65ba001419717e862939c.scn"]
 
 [params]
 
