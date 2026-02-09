@@ -1,21 +1,19 @@
 [gd_scene format=3 uid="uid://bvpnynt0wo3dj"]
 
 [ext_resource type="Script" uid="uid://boo6kcd1cfnoi" path="res://scripts/camera.gd" id="1_o5qli"]
-[ext_resource type="PackedScene" uid="uid://bofdyn4ed12gr" path="res://Tiles/Tree_Medium_Tile.glb" id="2_0wfyh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_sgp6g"]
 
 [node name="Main" type="Node3D" unique_id=1736328181]
 
-[node name="Camera" type="Camera3D" parent="." unique_id=264095415]
-transform = Transform3D(0.9189289, 0.3944231, 0, 1.7240781e-08, -4.016766e-08, 1, 0.3944231, -0.9189289, -4.371139e-08, -1.2978665, 5.4012737, -1.3826822)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=70643687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3, -2)
+mesh = SubResource("BoxMesh_sgp6g")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=554194986]
+
+[node name="Node3D" type="Node3D" parent="CharacterBody3D" unique_id=749202970]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Node3D" unique_id=1960727859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3784428, 2.0324998)
 script = ExtResource("1_o5qli")
-
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1453170979]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1497855, 16.010548, -2.1901474)
-light_energy = 16.0
-omni_range = 4096.0
-
-[node name="Tree_Medium_Tile" parent="." unique_id=205539245 instance=ExtResource("2_0wfyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5383003, 2.5099783, -1.6059899)
-
-[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=581888825]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4826736, 3.3406835, 0.49210632)
