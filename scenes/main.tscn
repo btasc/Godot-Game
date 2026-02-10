@@ -1,51 +1,24 @@
 [gd_scene format=3 uid="uid://bvpnynt0wo3dj"]
 
 [ext_resource type="Script" uid="uid://boo6kcd1cfnoi" path="res://scripts/camera.gd" id="1_o5qli"]
-[ext_resource type="PackedScene" uid="uid://bofdyn4ed12gr" path="res://Tiles/Tree_Medium_Tile.glb" id="2_0wfyh"]
-[ext_resource type="PackedScene" uid="uid://bqyhh6sn0d0ot" path="res://Tiles/Tree_Short_Tile.glb" id="3_o6xl0"]
-[ext_resource type="PackedScene" uid="uid://bmtpbdn8hed04" path="res://Tiles/All_Tile.glb" id="4_tipki"]
-[ext_resource type="PackedScene" uid="uid://iuxxook3d7iq" path="res://Tiles/Blank_Tile.glb" id="5_85g3d"]
-[ext_resource type="PackedScene" uid="uid://d1r1uy3sb7pul" path="res://Tiles/Bush_Tile.glb" id="6_choun"]
-[ext_resource type="PackedScene" uid="uid://hrb0tte5sijk" path="res://Tiles/Rock_Tile.glb" id="7_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://dq8f62dmvjirr" path="res://Map.glb" id="2_0wfyh"]
 
 [sub_resource type="Environment" id="Environment_o5qli"]
 
 [node name="Main" type="Node3D" unique_id=1736328181]
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=554194986]
-
-[node name="Node3D" type="Node3D" parent="CharacterBody3D" unique_id=749202970]
-
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Node3D" unique_id=1960727859]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1960727859]
 transform = Transform3D(1, 0, 0, 0, 0.90385866, 0.4278312, 0, -0.4278312, 0.90385866, -0.83234787, 4.987134, 2.0324998)
 script = ExtResource("1_o5qli")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1299978027]
 environment = SubResource("Environment_o5qli")
 
-[node name="Tree_Medium_Tile" parent="." unique_id=205539245 instance=ExtResource("2_0wfyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09386349, 0, -2.359303)
-
-[node name="Tree_Short_Tile" parent="." unique_id=1198717899 instance=ExtResource("3_o6xl0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9276397, 0, -2.3561687)
-
-[node name="All_Tile" parent="." unique_id=172798485 instance=ExtResource("4_tipki")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15292478, 0, -3.3157218)
-
-[node name="Blank_Tile" parent="." unique_id=493012395 instance=ExtResource("5_85g3d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8271289, 0, -3.3543053)
-
-[node name="Blank_Tile2" parent="." unique_id=2031839310 instance=ExtResource("5_85g3d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8555412, 0, -4.273509)
-
-[node name="Bush_Tile" parent="." unique_id=1822023582 instance=ExtResource("6_choun")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.204283, 0, -4.252217)
-
-[node name="Rock_Tile" parent="." unique_id=2024747911 instance=ExtResource("7_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8178878, 0, -3.2795901)
-
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1012485116]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.183545, 32.480118, -9.87506)
 light_energy = 16.0
 shadow_enabled = true
 omni_range = 714.3136
+
+[node name="Map" parent="." unique_id=2016614680 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5938296, 0.91043186, 4.545965)
